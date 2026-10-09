@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de Evento</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titulos">
+            <h1>Crie e compartilhe seu evento.</h1>
+            <h3>O primeiro passo, é preencher esse formulário de inscrição.</h3>
+        </div>
+    </header>
+    <form class="formulario">
+        <legend class="questao">
+            Informações
+        </legend>
+        <hr>
+
+        <label>Título do evento <span>(mínimo 8 caracteres)</span></label>
+        <input class="input" type="text" name="tevento">
+
+        <label> Link do evento <span>(comece com https://)</span></label>
+        <input class="input" type="text" name="levento">
+
+        <label>Whatsapp para contato<span>(somente números)</span></label>
+        <input class="input" type="numero" name="contato">
+
+        <label>Informações extras</label>
+        <textarea class="extra"></textarea>
+
+        <label>Categoria</label>
+        <select required>
+            <option value="" disabled selected>
+                Tipo do evento
+            </option>
+            <option value="1">
+                Festa de aniversario
+            </option>
+            <option value="2">
+                Casamento
+            </option>
+            <option value="3">
+                Evento social
+            </option>
+        </select>
+
+        <legend class="questao">
+            Privacidade
+        </legend>
+        <hr>
+
+        <label>E-mail do administrador <span>(digite um email válido)</span></label>
+        <input class="input" type="E-mail" name="email">
+
+        <label>Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+        <input class="input" type="Senha" name="senha">
+
+        <input class="checkbox" type="checkbox" name="evento privado">
+        <label>Evento privado</label>
+
+        <legend class="questao">Dia e hora</legend>
+        <hr>
+
+        <div>
+            <label class="datalabel">Data</label>
+            <label class="horalabel">Das</label>
+            <label class="horalabel">Até</label>
+
+            <input class="data" type="date">
+            <input placeholder="19:00" class="hora" type="tempo">
+            <input placeholder="20:00" class="hora" type="tempo">
+        </div>
+
+        <button class="enviar">Salvar evento</button>
+    </form>
+</body>
+</html>
